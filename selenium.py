@@ -66,30 +66,6 @@ class Selenium:
         except Exception as e:
             print(e)
 
-    def get_texts_by_xpath(self, xpath: str) -> list:
-        """
-        Args:
-            xpath(str): html xpath
-
-        Returns:
-            list: element text list
-        """
-
-        p = re.compile(".+ol$|.+ul$")
-        m = p.match(xpath)
-        text_list = []
-        self.driver.implicitly_wait(self.timeout)
-        try:
-            if m:
-                for element in self.driver.find_elements_by_xpath(xpath + "/li"):
-                    text_list.append(element.text)
-            else:
-                for element in self.driver.find_elements_by_xpath(xpath):
-                    text_list.append(element.text)
-        except Exception as e:
-            print(e)
-        return text_list
-
     def go_to(self, url: str):
         """
         Args:
