@@ -1,0 +1,7 @@
+requests
+glances
+bs4
+webdriver_manager
+json5==0.9.5
+logging3==0.0.2
+PyMySQL==1.0.2
