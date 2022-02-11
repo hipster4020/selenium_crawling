@@ -5,18 +5,19 @@
 
 # 💻 Selenium Based Crawling
 
+### Selenium Based Crawling
 ### BeautifulSoup is partially used.
 <br>
 <br>
 
 ## 👉🏻 tree
  * [tree-md]
+ * [db]
+   * [alchemy.py]
+   * [config.py]
  * [Dockerfile]
- * [src]
-   * [config.yml]
-   * [dataloader.py]
-   * [test.py]
-   * [tokenizer.py]
-   * [train.py]
  * [README.md]
+ * [crawling.py]
  * [requirements.txt]
+ * [selenium.py]
+
